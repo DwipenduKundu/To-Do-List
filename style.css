@@ -85,9 +85,50 @@ body {
 
 
 
-@media (max-width:1024px){
-    #submit{
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .Todotext {
+        width: 60%;
+        font-size: 1rem;
+    }
+
+    #submit {
+        width: 10%;
         font-size: 0.7rem;
+    }
+
+    .show {
+        width: 70%;
     }
 }
 
+/* Mobile (below 768px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 120%;
+    }
+
+    .Todotext {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    #submit {
+        width: 80%;
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .todotextContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .show {
+        width: 90%;
+    }
+
+    .items {
+        font-size: 0.9rem;
+    }
+}
