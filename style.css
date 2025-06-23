@@ -1,0 +1,93 @@
+body {
+    margin: 0px;
+    font-size: 150%;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1fr;
+}
+
+.todotextContainer {
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Todotext {
+    height: 40px;
+    width: 40%;
+    font-size: 100%;
+    margin: 1%;
+    grid-row: 1;
+    grid-column: 1/8;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#submit{
+    height: 40px;
+    width:5%;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.listcontainer {
+    width: 100%;
+    height: 100%;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show {
+    height: 100%;
+    width: 50%;
+    background-color: aqua;
+    border-radius: 25px;
+    display:flex;
+    flex-direction: column;
+    align-items : center;
+
+}
+
+.items{ 
+    background-color:rgb(117, 236, 197);
+    border: 3px solid #018C5E;;
+    border-radius:25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    width: 90%;
+    margin: 1%;
+}
+
+.deletebutton{
+    border-radius: 50px;
+    background-color:  #f7786b;
+    border-color: #c94c4c;
+}
+
+#submit{
+    background-color: hsl(54, 82%, 78%);
+}
+
+.items[draggable="true"] {
+    cursor: move;
+    user-select: none;
+}
+
+
+
+@media (max-width:1024px){
+    #submit{
+        font-size: 0.7rem;
+    }
+}
+
